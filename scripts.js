@@ -85,7 +85,7 @@ function wordWithRegEx (number){
 mytext.addEventListener("input", counterCharacter)
 mytext.addEventListener("keypress", limitCharacter)
 
-if (url.indexOf('phrase-clean.html') == -1) {
+if (url.indexOf('phrase-clean.html') <= 0) {
     clean1.addEventListener("click", cleanPhrase)
 } else {
     clean2.addEventListener("click", cleanAgain)
