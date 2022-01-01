@@ -57,12 +57,12 @@ function cleanPhrase() {
     if (mytextclean.match(/[*]{3}/) != "***") {
         alert("Sua frase já está limpinha ;)");
     } else {
-        window.location = "phrase-clean.html?mytextclean="+mytextclean;
+        window.location = "https://luiz-motta.github.io/phrase-cleaner/phrase-clean.html?mytextclean="+mytextclean;
     }
 }
 function cleanAgain() {
     document.getElementById('my-text').value = '';
-    window.location.href = 'index.html';
+    url = 'https://luiz-motta.github.io/phrase-cleaner/index.html';
 }
 function textReplace(text) {
     let textclean = text;
@@ -85,7 +85,7 @@ function wordWithRegEx (number){
 mytext.addEventListener("input", counterCharacter)
 mytext.addEventListener("keypress", limitCharacter)
 
-if (url.indexOf('index.html') > 0) {
+if (url.indexOf('phrase-clean.html') == -1) {
     clean1.addEventListener("click", cleanPhrase)
 } else {
     clean2.addEventListener("click", cleanAgain)
