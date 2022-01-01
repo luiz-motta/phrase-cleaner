@@ -57,12 +57,12 @@ function cleanPhrase() {
     if (mytextclean.match(/[*]{3}/) != "***") {
         alert("Sua frase já está limpinha ;)");
     } else {
-        window.location = "https://luiz-motta.github.io/phrase-cleaner/phrase-clean.html?mytextclean="+mytextclean;
+        window.location = "phrase-clean.html?mytextclean="+mytextclean;
     }
 }
 function cleanAgain() {
     document.getElementById('my-text').value = '';
-    url = 'https://luiz-motta.github.io/phrase-cleaner/index.html';
+    window.location.href = 'index.html';
 }
 function textReplace(text) {
     let textclean = text;
